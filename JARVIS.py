@@ -175,9 +175,30 @@ if __name__ == "__main__":
                     speak("Opening Google dot com.")
                     webbrowser.open_new_tab("https://www.google.com/")
             elif 'open youtube' in query:
-                print("Opening YouTube...")
-                speak("Opening YouTube.")
-                webbrowser.open_new_tab("https://www.youtube.com/")
+                if 'pewdipy' in query or 'pewdiepie' in query:
+                    print("Opening PewDiePie's channel on YouTube...")
+                    speak("Opening PewDiePie's channel on YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/user/PewDiePie")
+                elif 'mister beast' in query:
+                    print("Opening Mr. Beast's channel on YouTube...")
+                    speak("Opening Mister Beast's channel on YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/user/mrbeast6000")
+                elif 'dan t d m' in query or 'dan' in query or 'dantdm' in query:
+                    print("Opening DanTDM's channel on YouTube...")
+                    speak("Opening DanTDM's channel on YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/user/TheDiamondMinecart")
+                elif 'dude perfect' in query:
+                    print("Opening Dude Perfect's channel on YouTube...")
+                    speak("Opening Dude Perfect's channel on YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/user/corycotton")
+                elif 'alan walker' in query:
+                    print("Opening Alan Walker's channel on YouTube...")
+                    speak("Opening Alan Walker's channel on YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/user/DjWalkzz")
+                else:
+                    print("Opening YouTube...")
+                    speak("Opening YouTube.")
+                    webbrowser.open_new_tab("https://www.youtube.com/")
             elif 'open stackoverflow' in query or 'stack overflow' in query:
                 print("Opening Stack Overflow...")
                 speak("Opening Stack Overflow.")
@@ -218,6 +239,18 @@ if __name__ == "__main__":
                 print("Opening GitHub...")
                 speak("Opening GitHub.")
                 webbrowser.open_new_tab("https://www.github.com/")
+            elif 'open amazon' in query:
+                print("Opening Amazon...")
+                speak("Opening Amazon.")
+                webbrowser.open_new_tab("https://ww.amazon.com/")
+            elif 'open flipkart' in query or 'open flipcart' in query:
+                print("Opening Flipkart...")
+                speak("Opening Flipkart.")
+                webbrowser.open_new_tab("https://www.flipkart.com/")
+            elif 'open twitch' in query:
+                print("Opening Twitch...")
+                speak("Opening Twitch.")
+                webbrowser.open_new_tab("https://www.twitch.tv/")
             elif 'open fortnite' in query or 'open fort night' in query or 'play fortnite' in query or 'play fort night' in query:
                 print("Opening Epic Games' Fortnite...")
                 speak("Opening Epic Games' Fortnite.")
