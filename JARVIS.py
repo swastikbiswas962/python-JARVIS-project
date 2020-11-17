@@ -57,10 +57,8 @@ if __name__ == "__main__":
     print("You can now do whatever you want to, and when you need my help, just call me up.")
     speak("You can now do whatever you want to, and when you need my help, just call me up.")
     print()
-    # while True:
-    if 1:
-        # query = acceptCommand().lower()
-        query = input(">> ")
+    while True:
+        query = acceptCommand().lower()
         if 'jarvis' in query:
             if 'time now' in query or 'the time' in query:
                 time24 = datetime.datetime.now().strftime("%H:%M")
@@ -229,8 +227,8 @@ if __name__ == "__main__":
                     print("Error: Could not load Fortnite on your desktop...")
                     print("Would you like to download Fortnite for desktop from the Epic Games Laucher?")
                     speak("Error: Could not load Fortnite on your desktop. Would you like to download Fortnite for desktop from the Epic Games Laucher?")
-                    # query = acceptCommand().lower()
-                    query = input(">> ")
+                    query = acceptCommand().lower()
+                    
                     if 'yes' in query or 'download' in query or 'install' in query:
                         try:
                             print("Redirecting you to the Epic Games Launcher...")
@@ -240,8 +238,8 @@ if __name__ == "__main__":
                             print("Error: Could not load Epic Games Launcher on your desktop...")
                             print("Would you like to download Epic Games Launcher for desktop?")
                             speak("Error: Could not load Epic Games Launcher on your desktop. Would you like to download Epic Games Launcher for desktop?")
-                            # query = acceptCommand().lower()
-                            query = input(">> ")
+                            query = acceptCommand().lower()
+                            
                             if 'yes' in query or 'download' in query or 'install' in query:
                                 print("Redirecting you to Epic Game's download page...")
                                 speak("Redirecting you to Epic Game's download page.")
@@ -258,8 +256,8 @@ if __name__ == "__main__":
                     print("Error: Could not load Spotify on your desktop...")
                     print("Would you like to download Spotify for desktop or rather use the web player?")
                     speak("Error: Could not load Spotifi on your desktop. Would you like to download Spotifi for desktop or rather use the web player?")
-                    # query = acceptCommand().lower()
-                    query = input(">> ")
+                    query = acceptCommand().lower()
+                    
                     if 'download' in query or 'install' in query:
                         print("Redirecting you to Spotify's download page...")
                         speak("Redirecting you to Spotifi's download page.")
@@ -280,8 +278,8 @@ if __name__ == "__main__":
                     print("Error: Could not load VS Code on your desktop...")
                     print("Would you like to download VS Code for desktop?")
                     speak("Error: Could not load VS Code on your desktop. Would you like to download VS Code for desktop?")
-                    # query = acceptCommand().lower()
-                    query = input(">> ")
+                    query = acceptCommand().lower()
+                    
                     if 'yes' in query or 'download' in query or 'install' in query:
                         print("Redirecting you to VS Code's download page...")
                         speak("Redirecting you to V S Code's download page.")
@@ -298,8 +296,8 @@ if __name__ == "__main__":
                     print("Error: Could not load Epic Games Launcher on your desktop...")
                     print("Would you like to download Epic Games Launcher for desktop?")
                     speak("Error: Could not load Epic Games Launcher on your desktop. Would you like to download Epic Games Launcher for desktop?")
-                    # query = acceptCommand().lower()
-                    query = input(">> ")
+                    query = acceptCommand().lower()
+                    
                     if 'yes' in query or 'download' in query or 'install' in query:
                         print("Redirecting you to Epic Game's download page...")
                         speak("Redirecting you to Epic Game's download page.")
@@ -316,8 +314,8 @@ if __name__ == "__main__":
                     print("Error: Could not load Chrome on your desktop...")
                     print("Would you like to download Chrome for desktop?")
                     speak("Error: Could not load Chrome on your desktop. Would you like to download Chrome for desktop?")
-                    # query = acceptCommand().lower()
-                    query = input(">> ")
+                    query = acceptCommand().lower()
+                    
                     if 'yes' in query or 'download' in query or 'install' in query:
                         print("Redirecting you to Chrome's download page...")
                         speak("Redirecting you to Chrome's download page.")
@@ -343,7 +341,7 @@ if __name__ == "__main__":
                     print("Would you like to download Edge for desktop?")
                     speak("Error: Could not load Edge in your desktop. Would you like to download Edge for desktop?")
                     #query = acceptCommand().lower()
-                    query = input(">> ")
+                    
                     if 'yes' in query or 'download' in query or 'install' in query:
                         print("Redirecting you to Microsoft Edge's download page...")
                         speak("Redirecting you to Microsoft Edge's download page.")
