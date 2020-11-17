@@ -340,7 +340,7 @@ if __name__ == "__main__":
                     print("Error: Could not load Edge in your desktop...")
                     print("Would you like to download Edge for desktop?")
                     speak("Error: Could not load Edge in your desktop. Would you like to download Edge for desktop?")
-                    #query = acceptCommand().lower()
+                    query = acceptCommand().lower()
                     
                     if 'yes' in query or 'download' in query or 'install' in query:
                         print("Redirecting you to Microsoft Edge's download page...")
